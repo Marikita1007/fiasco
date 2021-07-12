@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+
+body{
+    margin: 0;
+}
+
+p{
+    color: #6F6F6F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.5vh;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px){
+    p{
+        color: #6F6F6F;
+        font-size: 1vh;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.8vh;
+        font-weight: 300;
+    }
+}
+
+h1, h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 1200;
+}
+
+.font-pinyon{
+    font-family: 'Pinyon Script';
+    color: #C89446;
+}
+
+/* NAVBAR */
+#header .topnav {
+    background-color: transparent;
+    overflow: hidden;
+}
+  
+/* Style the links inside the navigation bar */
+#header .topnav a {
+    float: left;
+    color: white;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    font-size: 2vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+  
+#header .topnav .navlinks{
+    display: flex;
+    justify-content: flex-end;
+}
+  
+  /* Change the color of links on hover */
+#header .topnav .duration-content:hover{
+    color: #C89446;
+    text-decoration: none;
+    transition-duration: 3s;
+}
+  
+/* Add a color to the active/current link */
+#header .topnav a.active {
+    color: white;
+}
+  
+#header .topnav .border-content{
+    border: 1px solid #C89446;
+    text-decoration: none; 
+}
+  
+#header .topnav .border-content:hover{
+    color: white;
+    background-color: #C89446;
+}
+
+#header{
+    background: url(../img/eggs.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    min-height: 60vh;
+    width: 100%;
+}
+
+#header .navbar-brand{
+    margin-left: 10vw;
+}
+
+#header .navlinks{
+    margin-right: 10vw;
+}
+
+/* navbar for smaller browsers */
+@media screen and (max-width: 768px){
+    #header .topnav a {
+        font-size: 1.5vh;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+}
+
+/* HOME */
+#home{
+    min-height: 70vh;
+}
+
+.home{
+    margin-top: 10vh;
+}
+ 
+
+/* welcome text */
+.home span{
+    color: #C89446;
+    font-size: 7vh;
+}
+
+/* text of THE FIASCO */ Je n'ai pas pu finir, mais j'ai compris ce que je prends du temps et ce qui me frustre quand les choses tournent mal
+.home h1{
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 8vh;
+}
+
+.home h2{
+    letter-spacing: 1px;
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* ABOUT PAGE TO MENU(CHEF) PAGE BACK GROUND*/
+#about, #menu{
+    background-image: url(../img/spices.jpg), url(../img/oranges.jpg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ABOUT PAGE */
+#about{
+    min-height: 70vh;
+}
+
+.overline-about{
+    background-image: linear-gradient(#C89446, #C89446);
+    background-position: top; 
+    background-size: 70% 3px; 
+    background-repeat: no-repeat;
+    padding-top: 12px;
+}
+
+.container .about-content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+
+.about-content .about-text-content{
+    padding: 0 !important;
+}
+
+
+.about-content .about-title{
+    font-weight: bold;
+}
+
+
+.about-content .font-pinyon{
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+.about-content h2{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.see-more-link{
+    color: #C89446;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.see-more-link:hover{
+    color: #C89446;
+    border-color: #C89446;
+}
+
+#about .col-lg-6{
+    margin-top: 15vh;
+}
+  
+.burger-card-top, .burger-card-bottom{
+      width: 22vw;
+      height: 45vh;
+}
+  
+.burger-card-bottom {
+      position: absolute;
+      top: 60vh;
+      left: 7vw;
+      border: solid 1px #C89446;
+}
+  
+.burger-card-top {
+      position: absolute;
+      top: 65vh;
+      left: 9vw;
+}
+
+ /*place top of #about section */
+#about img{
+    width: 22vw;
+    height: 45vh;
+}
+ 
+.chiken-card-top, .chiken-card-bottom{
+    width: 22vw;
+    height: 45vh;
+}
+
+.chiken-card-bottom {
+    position: absolute;
+    top: 122vh;
+    left: 67vw;
+    border: solid 1px #C89446;
+}
+
+.chiken-card-top {
+    position: absolute;
+    top: 126vh;
+    left: 65vw;
+}
+
+
+/* about page for smaller browsers */
+@media screen and (max-width: 991px){
+    #about, #menu{
+        background-image: none;
+    }
+
+    #about .col-lg-6{
+        margin-top: 15vh;
+    }
+
+    #about .image-responsive{
+        min-width: 100vw;
+        min-height: 50vh;
+    }
+
+    #about img{
+        width: none;
+        height: none;
+    }
+
+    .chiken-card-top, .chiken-card-bottom{
+        width: none;
+        height: none;
+    }
+    
+    .chiken-card-bottom {
+        top: none;
+        left: none;
+        border: solid 1px white;
+    }
+    
+    .chiken-card-top {
+        top: none;
+        left: none;
+    }
+
+    .burger-image, .chiken-image{
+        border: 1px solid #C89446;
+    }
+
+    /* flex-order */
+    /* .about-content .first-content{
+        order: -1;
+    }
+
+    .about-content .second-content{
+        order: 1;
+    } */
+
+    .home h1{
+        font-size: 6vh;
+    }
+
+    .home h2{
+        font-size: 2.5vh;
+    }
+
+    #about .burger-card-bottom, .chiken-card-bottom{
+        border: 1px solid transparent;
+    }
+   
+}
+
+
+
+/* MENU PAGE */
+.overline-menu{
+    background-image: linear-gradient(#C89446, #C89446);
+    background-position: top; 
+    background-size: 70% 3px; 
+    background-repeat: no-repeat;
+    padding-top: 12px;
+}
+
+/* 三角が後ろに表示されるように変更する*/
+#menu .background-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 25vh;
+
+}
+
+/* 三角が後ろに表示されるように変更する*/
+#menu .background-style{
+    border: 3px solid #C89446;
+    transform: translate(0%, -57vh) rotate(45deg); 
+    height: 50vh;
+    width: 25vw;
+    position: absolute;
+    z-index: -1;
+}
+
+#menu .white-background{
+    background-color: white;
+}
+
+#menu .font-pinyon{
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+#menu h2{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.menu-topnav-container .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+  
+.menu-topnav-container .topnav a {
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 1vh 3vw;
+    text-decoration: none;
+    font-size: 2vh;
+}
+  
+.menu-topnav-container .topnav a:hover {
+    color: #C89446;
+    transition-duration: 3s;
+}
+  
+.menu-topnav-container .topnav a.active {
+    color: black;
+    background-image: linear-gradient(#C89446, #C89446);
+    background-position: bottom; 
+    background-size: 50% 1px; 
+    background-repeat: no-repeat;
+    padding-bottom: 1px;
+}
+
+.flex-menu-content{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-detail-content{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+
+
+.menu-detail-content .font-pinyon{
+    font-size: 2vw !important;
+}
+
+
+#menu .col-lg-4, .col-lg-2{
+    padding: 3vh;
+}
+  
+.menu-detail-content .h3, h3{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+  
+  
+.menu-detail-content .left-side-content{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+  
+.menu-detail-content .font-pinyon{
+    font-size: 2vw;
+}
+  
+/* 文章の表示方法をサイドチェックする */
+.menu-detail-content .left-text{
+    text-align: left;
+}
+  
+.menu-detail-content .right-text{
+    text-align: right;
+} 
+
+
+/* menu page for smaller browsers */
+/* 右に詰まるかられを訂正する */
+@media screen and (max-width: 576px){
+    #menu .background-style{
+        border: none;
+    }
+
+    #menu .col-sm-2 img{
+        width: 15vw;
+        height: 13vh;
+    }
+
+    #menu .first-content{
+        order: -1;
+    }
+
+    #menu .second-content{
+        order: 1;
+    }
+
+    #menu .third-content{
+        order: 2;
+    }
+
+    #menu .forth-content{
+        order: 3;
+    }
+
+    #menu .fifth-content{
+        order: 4;
+    }
+
+    #menu .sixth-content{
+        order: 5;
+    }
+
+    #menu .seventh-content{
+        order: 6;
+    }
+
+    #menu .eighth-content{
+        order: 7;
+    }  
+
+}
+
+/* CHEF PAGE */
+.chef-content .row{
+    flex-wrap: inherit;
+}
+
+/* 左のテキストを右揃えにする */
+.chef-info-content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Reservation */
+#reservation{
+    min-height: 60vh;
+    padding-top: 5vh;
+}
+
+#reservation .font-pinyon{
+    font-size: 7vh;
+    font-weight: bold;
+}
+
+#reservation h2{
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+
+#reservation p{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#reservation{
+    background: url(../img/reservation.jpg);
+}
+
+#reservation .text-center .row{
+    display: flex;
+    justify-content: center;
+}
+
+
+#reservationSelect{
+    background-color: transparent;
+    color: white;
+}
+
+#reservation .form-group input{
+    background-color: transparent;
+    color: white;
+}
+
+/* ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+} */
+
+#reservation .btn{
+    color: white;
+    background-color: #C89446;
+    margin-top: 5vh;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+#reservation form .row{
+    justify-content: center;
+}
+
+#reservation .col-lg-3{
+    display: grid;
+}
+
+.form-control, .form-select{
+    border: none;
+}
+
+#reservation .form-group{
+    border-radius: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+    
+/* RECIPES PAGE */
+#recipes{
+    height: 70vh;
+    background-image: url(../img/news-bg.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.recipes-title-content{
+    justify-content: flex-end;
+   text-align: right;
+}
+
+#recipes .font-pinyon{
+    font-size: 7vh;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#recipes h2{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+
+/* CONTACT PAGE */
+#contact .map-content{
+    width: 100vw;
+    height: 50vh;
+}
+
+
+/* FOOTER SECTION */
+footer{
+    background-image: url(../img/splash.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color:#383838;
+    height: 40vh;
+}
+
+.footer-title-content{
+    color: #C89446;;
+}
+
+.footer-content{
+    color: white;
+}
+
+.first-col .footer-infos {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 17vh;
+}
+
+.second-col .footer-infos {
+    display: block;
+    margin-bottom: 3vh;
+}
+
+.third-col .footer-infos {
+    display: block;
+    margin-bottom: 3vh;
+}
+
+
+
+/* section 1 */
+/* nav 1*/
+/* nav 2*/
+/* h1 */
+
+/*  @media nav
+nav
+h1
+*/
+
+/* section 2 */
+
+/* section 3 */
+
+/* section 4 */
